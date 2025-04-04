@@ -1,6 +1,8 @@
 [
   {
     "username": "shuidao",
-    "message": "你好！"
+    "message": "你好！",
+    "chatType": "group",
+    "toUserId": null
   }
 ]
