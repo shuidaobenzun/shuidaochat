@@ -1,7 +1,9 @@
 [
   {
+    "id": 1,
     "username": "shuidao",
     "password": "50332278",
-    "online": false
+    "online": false,
+    "chatRecords": {}
   }
 ]
