@@ -17,6 +17,13 @@
         <h1 class="text-center mb-4">聊天界面</h1>
         <div id="messageList" class="list-group mb-3"></div>
         <div class="input-group mb-3">
+          <select v-model="selectedChatType" class="form-select me-2">
+            <option value="group">群聊</option>
+            <option value="private">一对一聊天</option>
+          </select>
+          <select v-if="selectedChatType === 'private'" v-model="selectedUser" class="form-select me-2">
+            <option v-for="user in userList" :value="user.id">{{ user.username }}</option>
+          </select>
           <input v-model="newMessage" placeholder="输入消息" class="form-control">
           <button @click="sendMessage" class="btn btn-primary">发送</button>
         </div>
