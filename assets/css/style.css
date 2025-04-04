@@ -1,0 +1,13 @@
+#messageList {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+#userList {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.list-group-item {
+  word-break: break-all;
+}
